@@ -16,7 +16,7 @@ body h1 {
 }
 table {
 	border-collapse: separate;
-	border: 1px solid #000000;
+	border: 1px solid #2C3539;
 	border-width: 0px 0px 1px 1px;
 	margin: 10px auto;
 	font-size: 20px;
@@ -26,8 +26,9 @@ td, th {
 	height: 81px;
 	text-align: center;
 	vertical-align: middle;
-	border: 1px solid #000000;
-	
+	background: url(../img/cells.png);
+	color: #444;
+	position: relative;
 }
 th {
 	height: 30px;
@@ -35,20 +36,21 @@ th {
 	font-size: 14px;
 }
 td:hover, th:hover {
-	color:  #2c3539;
+	background-position: 0px -81px;
+	color: #222;
 }
 td.date_has_event {
-	color: green;
+	background-position: 162px 0px;
+	color: white;
 }
 td.date_has_event:hover {
-	color: red
+	background-position: 162px -81px;
 }
 td.padding {
-	
-	background-color: #C0C0C0;
+	background: url(../img/calpad.jpg);
 }
 td.today {
-	background-color: #2C3539;
+	background-position: 81px 0px;
 	color: white;
 }
 td.today:hover {
@@ -63,7 +65,7 @@ td.today:hover {
 	display: none;
 	z-index: 1000;
 	padding: 15px;
-	background: #E7ECF2  ;
+	background: #E7ECF2 url(../img/popup.png) no-repeat;
 	color: white;
 	border: 1px solid white;
 	font-size: 15px;
